@@ -1,0 +1,31 @@
+---
+name: cmpsc-100-week-06-worksheets
+break: true
+indent: 4
+---
+
+Week 06 - Worksheet 0 - Data types - Strings.ipynb:
+    ConfirmFileExists
+    MatchFileFragment --fragment "TODO" --count 0 --exact
+    MatchFileFragment --fragment "choice.upper()" --count 1
+    MatchFileFragment --fragment "animal.startswith(" --count 1
+    MatchFileFragment --fragment "bad_message.replace(" --count 1
+    MatchFileFragment --fragment "quote.split()" --count 1
+    MatchFileFragment --fragment ".join(words)" --count 1
+    MatchFileFragment --fragment "word.lower()" --count 1
+    MatchFileFragment --fragment "verse.split()" --count 1
+    MatchFileFragment --fragment "chr(" --count 5
+    
+Week 06 - Worksheet 1 - Syntax - File IO.ipynb:
+    ConfirmFileExists
+    MatchFileFragment --fragment "TODO" --count 0 --exact
+
+MatchCommandFragment --command "python3 Week_06_-_Worksheet_0_-_Data_types_-_Strings.py < .inputs/.worksheet-inputs" --fragment "Come now, Roy, we will first make them bad hot coffee some snow would cool." --count 1 --exact
+MatchCommandFragment --command "python3 Week_06_-_Worksheet_0_-_Data_types_-_Strings.py < .inputs/.worksheet-inputs" --fragment "o	10" --count 1 --exact
+MatchCommandFragment --command "python3 Week_06_-_Worksheet_0_-_Data_types_-_Strings.py < .inputs/.worksheet-inputs" --fragment "e	7" --count 1 --exact
+MatchCommandFragment --command "python3 Week_06_-_Worksheet_0_-_Data_types_-_Strings.py < .inputs/.worksheet-inputs" --fragment "i	2" --count 1 --exact
+MatchCommandFragment --command "python3 Week_06_-_Worksheet_0_-_Data_types_-_Strings.py < .inputs/.worksheet-inputs" --fragment "a	2" --count 1 --exact
+MatchCommandFragment --command "python3 Week_06_-_Worksheet_0_-_Data_types_-_Strings.py < .inputs/.worksheet-inputs" --fragment "u	1" --count 1 --exact
+MatchCommandFragment --command "python3 Week_06_-_Worksheet_0_-_Data_types_-_Strings.py < .inputs/.worksheet-inputs" --fragment "Stop telling me stuff!" --count 1 --exact
+MatchCommandFragment --command "python3 Week_06_-_Worksheet_1_-_Syntax_-_File_IO.py" --fragment "His changing eyes." --count 1 --exact
+MatchCommandFragment --command "python3 Week_06_-_Worksheet_1_-_Syntax_-_File_IO.py" --fragment "10	Lifting his delicate feet." --count 1 --exact

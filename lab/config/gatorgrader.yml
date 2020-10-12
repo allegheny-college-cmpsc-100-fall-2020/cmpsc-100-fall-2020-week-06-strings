@@ -1,0 +1,25 @@
+---
+name: cmpsc-100-week-06-lab
+break: true
+indent: 4
+---
+
+Week 06 - Lab - Spies like us.ipynb:
+    ConfirmFileExists
+    MatchFileFragment --fragment "TODO" --count 0 --exact
+    MatchFileFragment --fragment "print(f" --count 1
+    MatchFileFragment --fragment "for" --count 1
+    MatchFileFragment --fragment "open(" --count 1
+    MatchFileFragment --fragment ".read" --count 1
+    MatchFileFragment --fragment "chr(" --count 1
+    MatchFileFragment --fragment "int(" --count 1
+    MatchFileFragment --fragment "split(" --count 1
+
+reflection.md:
+    ConfirmFileExists
+    MatchFileFragment --fragment "TODO" --count 0 --exact
+    CountFileWords --count 300
+    CountFileParagraphs --count 6
+
+MatchCommandFragment --command "python3 Week_06_-_Lab_-_Spies_like_us.py" --fragment "Now tell the truth, isn't this fun?" --count 1 --exact
+CountCommandOutput --command "python3 Week_06_-_Lab_-_Spies_like_us.py" --count 24
